@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "TimeStampCore",
+    platforms: [
+        .iOS(.v17),
+        .macOS(.v13),
+        .watchOS(.v10)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
