@@ -11,7 +11,7 @@ public extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = .init(identifier: .gregorian)
         dateFormatter.locale = .init(identifier: "ja_JP")
-        dateFormatter.dateFormat = "yy/MM/DD (EEE) HH:mm"
+        dateFormatter.dateFormat = "yy/MM/dd (EEE) HH:mm"
         return dateFormatter.string(from: self)
     }
 }
